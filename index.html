@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Regex input validation</title>
+    <meta name="description" content="Regex input validation">
+    <meta name="author" content="Morné Botha">
+    <link href="https://fonts.googleapis.com/css?family=Glegoo:400,700&display=swap&subset=devanagari,latin-ext"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box text-center">
+            <h1>Regex input validation</h1>
+            <form action="javascript:alert('Field is Valid');">
+                <label>Email</label>
+                <input type="text" name="email" pattern="^[-+.0-9A-Z_a-z]+@[-+.0-9A-Z_a-z]+\.[A-Za-z]{2,4}"
+                    title="Email Validation" required>
+                <button type="submit" class="bg-blue waves">button</button>
+            </form>
+            <br>
+            <form action="javascript:alert('Field is Valid');">
+                <label>Telephone</label>
+                <input type="text" name="telephone"
+                    pattern="^([0-9]( |-)?)?(\(?[0-9]{3}\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})$"
+                    title="Telephone Number Validation" required>
+                <button type="submit" class="bg-blue waves">button</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
